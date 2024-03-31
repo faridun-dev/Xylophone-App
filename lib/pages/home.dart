@@ -4,9 +4,17 @@ import 'package:audioplayers/audioplayers.dart';
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
 
+  void playSound(note) {
+    final player = AudioPlayer();
+    player.play(
+      AssetSource("note$note.wav"),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         backgroundColor: Colors.white,
         body: SafeArea(
@@ -14,7 +22,9 @@ class HomePage extends StatelessWidget {
           children: [
             Expanded(
               child: TextButton(
-                onPressed: () {},
+                onPressed: () {
+                  playSound(1);
+                },
                 child: Container(
                   color: Colors.red,
                 ),
@@ -22,7 +32,9 @@ class HomePage extends StatelessWidget {
             ),
             Expanded(
               child: TextButton(
-                onPressed: () {},
+                onPressed: () {
+                  playSound(2);
+                },
                 child: Container(
                   color: Colors.orange,
                 ),
@@ -30,7 +42,9 @@ class HomePage extends StatelessWidget {
             ),
             Expanded(
               child: TextButton(
-                onPressed: () {},
+                onPressed: () {
+                  playSound(3);
+                },
                 child: Container(
                   color: Colors.yellow,
                 ),
@@ -38,7 +52,9 @@ class HomePage extends StatelessWidget {
             ),
             Expanded(
               child: TextButton(
-                onPressed: () {},
+                onPressed: () {
+                  playSound(4);
+                },
                 child: Container(
                   color: Colors.green,
                 ),
@@ -46,7 +62,9 @@ class HomePage extends StatelessWidget {
             ),
             Expanded(
               child: TextButton(
-                onPressed: () {},
+                onPressed: () {
+                  playSound(5);
+                },
                 child: Container(
                   color: Colors.green[800],
                 ),
@@ -54,7 +72,9 @@ class HomePage extends StatelessWidget {
             ),
             Expanded(
               child: TextButton(
-                onPressed: () {},
+                onPressed: () {
+                  playSound(6);
+                },
                 child: Container(
                   color: Colors.blue,
                 ),
@@ -62,7 +82,9 @@ class HomePage extends StatelessWidget {
             ),
             Expanded(
               child: TextButton(
-                onPressed: () {},
+                onPressed: () {
+                  playSound(7);
+                },
                 child: Container(
                   color: Colors.purple,
                 ),
