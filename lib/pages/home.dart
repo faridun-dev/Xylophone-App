@@ -11,6 +11,19 @@ class HomePage extends StatelessWidget {
     );
   }
 
+  Expanded buildKey(color, int soundNumber) {
+    return Expanded(
+      child: GestureDetector(
+        onTap: () {
+          playSound(1);
+        },
+        child: Container(
+          color: color,
+        ),
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -20,76 +33,13 @@ class HomePage extends StatelessWidget {
         body: SafeArea(
             child: Column(
           children: [
-            Expanded(
-              child: GestureDetector(
-                onTap: () {
-                  playSound(1);
-                },
-                child: Container(
-                  color: Colors.red,
-                ),
-              ),
-            ),
-            Expanded(
-              child: GestureDetector(
-                onTap: () {
-                  playSound(1);
-                },
-                child: Container(
-                  color: Colors.orange,
-                ),
-              ),
-            ),
-            Expanded(
-              child: GestureDetector(
-                onTap: () {
-                  playSound(1);
-                },
-                child: Container(
-                  color: Colors.yellow,
-                ),
-              ),
-            ),
-            Expanded(
-              child: GestureDetector(
-                onTap: () {
-                  playSound(1);
-                },
-                child: Container(
-                  color: Colors.green,
-                ),
-              ),
-            ),
-            Expanded(
-              child: GestureDetector(
-                onTap: () {
-                  playSound(1);
-                },
-                child: Container(
-                  color: Colors.green[900],
-                ),
-              ),
-            ),
-            Expanded(
-              child: GestureDetector(
-                onTap: () {
-                  playSound(1);
-                },
-                child: Container(
-                  color: Colors.blue,
-                ),
-              ),
-            ),
-            Expanded(
-              child: GestureDetector(
-                onTap: () {
-                  playSound(1);
-                },
-                child: Container(
-                  color: Colors.purple,
-                ),
-              ),
-            ),
+            buildKey(Colors.red, 1),
+            buildKey(Colors.orange, 2),
+            buildKey(Colors.yellow, 3),
+            buildKey(Colors.green, 4),
+            buildKey(Colors.green[900], 5),
+            buildKey(Colors.blue, 6),
+            buildKey(Colors.purple, 7),
           ],
         )),
       ),
