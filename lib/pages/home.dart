@@ -4,7 +4,7 @@ import 'package:audioplayers/audioplayers.dart';
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
 
-  void playSound(note) {
+  void playSound(int note) {
     final player = AudioPlayer();
     player.play(
       AssetSource("note$note.wav"),
@@ -16,7 +16,7 @@ class HomePage extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        backgroundColor: Colors.white,
+        backgroundColor: Colors.black,
         body: SafeArea(
             child: Column(
           children: [
