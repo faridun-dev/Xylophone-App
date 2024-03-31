@@ -11,7 +11,7 @@ class HomePage extends StatelessWidget {
     );
   }
 
-  Expanded buildKey(color, int soundNumber) {
+  Expanded buildKey(Color color, int soundNumber) {
     return Expanded(
       child: GestureDetector(
         onTap: () {
@@ -37,7 +37,7 @@ class HomePage extends StatelessWidget {
             buildKey(Colors.orange, 2),
             buildKey(Colors.yellow, 3),
             buildKey(Colors.green, 4),
-            buildKey(Colors.green[900], 5),
+            buildKey(Colors.green.shade900, 5),
             buildKey(Colors.blue, 6),
             buildKey(Colors.purple, 7),
           ],
