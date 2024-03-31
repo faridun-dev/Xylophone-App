@@ -15,7 +15,7 @@ class HomePage extends StatelessWidget {
     return Expanded(
       child: GestureDetector(
         onTap: () {
-          playSound(1);
+          playSound(soundNumber);
         },
         child: Container(
           color: color,
