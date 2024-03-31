@@ -8,29 +8,65 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        backgroundColor: Colors.blue,
+        backgroundColor: Colors.white,
         body: SafeArea(
             child: Column(
           children: [
-            TextButton(
-              child: Icon(
-                Icons.play_arrow,
-                color: Colors.white,
+            Expanded(
+              child: TextButton(
+                onPressed: () {},
+                child: Container(
+                  color: Colors.red,
+                ),
               ),
-              onPressed: () {
-                final player = AudioPlayer();
-                player.play(AssetSource("note1.wav"));
-              },
             ),
-            TextButton(
-              child: Icon(
-                Icons.play_arrow,
-                color: Colors.white,
+            Expanded(
+              child: TextButton(
+                onPressed: () {},
+                child: Container(
+                  color: Colors.orange,
+                ),
               ),
-              onPressed: () {
-                final player = AudioPlayer();
-                player.play(AssetSource("note2.wav"));
-              },
+            ),
+            Expanded(
+              child: TextButton(
+                onPressed: () {},
+                child: Container(
+                  color: Colors.yellow,
+                ),
+              ),
+            ),
+            Expanded(
+              child: TextButton(
+                onPressed: () {},
+                child: Container(
+                  color: Colors.green,
+                ),
+              ),
+            ),
+            Expanded(
+              child: TextButton(
+                onPressed: () {},
+                child: Container(
+                  color: Colors.green[800],
+                ),
+              ),
+            ),
+            Expanded(
+              child: TextButton(
+                onPressed: () {},
+                child: Container(
+                  color: Colors.blue,
+                ),
+              ),
+            ),
+            Expanded(
+              child: TextButton(
+                onPressed: () {},
+                child: Container(
+                  color: Colors.purple,
+                ),
+              ),
             ),
           ],
         )),
