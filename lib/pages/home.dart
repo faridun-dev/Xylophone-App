@@ -21,8 +21,8 @@ class HomePage extends StatelessWidget {
             child: Column(
           children: [
             Expanded(
-              child: TextButton(
-                onPressed: () {
+              child: GestureDetector(
+                onTap: () {
                   playSound(1);
                 },
                 child: Container(
@@ -31,9 +31,9 @@ class HomePage extends StatelessWidget {
               ),
             ),
             Expanded(
-              child: TextButton(
-                onPressed: () {
-                  playSound(2);
+              child: GestureDetector(
+                onTap: () {
+                  playSound(1);
                 },
                 child: Container(
                   color: Colors.orange,
@@ -41,9 +41,9 @@ class HomePage extends StatelessWidget {
               ),
             ),
             Expanded(
-              child: TextButton(
-                onPressed: () {
-                  playSound(3);
+              child: GestureDetector(
+                onTap: () {
+                  playSound(1);
                 },
                 child: Container(
                   color: Colors.yellow,
@@ -51,9 +51,9 @@ class HomePage extends StatelessWidget {
               ),
             ),
             Expanded(
-              child: TextButton(
-                onPressed: () {
-                  playSound(4);
+              child: GestureDetector(
+                onTap: () {
+                  playSound(1);
                 },
                 child: Container(
                   color: Colors.green,
@@ -61,19 +61,19 @@ class HomePage extends StatelessWidget {
               ),
             ),
             Expanded(
-              child: TextButton(
-                onPressed: () {
-                  playSound(5);
+              child: GestureDetector(
+                onTap: () {
+                  playSound(1);
                 },
                 child: Container(
-                  color: Colors.green[800],
+                  color: Colors.green[900],
                 ),
               ),
             ),
             Expanded(
-              child: TextButton(
-                onPressed: () {
-                  playSound(6);
+              child: GestureDetector(
+                onTap: () {
+                  playSound(1);
                 },
                 child: Container(
                   color: Colors.blue,
@@ -81,9 +81,9 @@ class HomePage extends StatelessWidget {
               ),
             ),
             Expanded(
-              child: TextButton(
-                onPressed: () {
-                  playSound(7);
+              child: GestureDetector(
+                onTap: () {
+                  playSound(1);
                 },
                 child: Container(
                   color: Colors.purple,
